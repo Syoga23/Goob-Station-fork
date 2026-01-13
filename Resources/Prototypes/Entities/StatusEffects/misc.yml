@@ -50,3 +50,13 @@
   name: hallucinations
   components:
   - type: SeeingRainbowsStatusEffect
+
+# Makes immune to electrict shock  
+- type: entity
+  parent: MobStatusEffectBase
+  id: StatusEffectShockImmune
+  name: electrocution immunity
+  components:
+  - type: GrantComponentsStatusEffect
+    components:
+    - type: ShockImmune #Goobstation

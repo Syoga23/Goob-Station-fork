@@ -115,6 +115,12 @@
       effects:
       - !type:SatiateThirst
         factor: 2
+      - !type:ModifyStatusEffect   #Goobstation start
+        effectProto: StatusEffectShockImmune
+        time: 1
+        type: Add
+        refresh: false
+      - !type:Jitter #Goobstation end
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
         time: 2
