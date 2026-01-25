@@ -1,0 +1,40 @@
+- type: entity
+  parent: Clothing
+  id: wallet
+  name: wallet
+  description: A sleek and fashionable wallet.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Objects/Misc/wallet.rsi
+      layers:
+        - map: ["closed"]
+          state: closed
+          visible: true
+        - map: ["opened"]
+          state: opened
+          visible: false
+        - map: ["idcard"]
+          sprite: Objects/Misc/id_cards.rsi
+          visible: false
+        - map: ["jobicon"]
+          sprite: Objects/Misc/id_cards.rsi
+          visible: false
+    - type: Appearance
+      visuals:
+        - type: WalletVisualizer
+    - type: Item
+      size: Small
+    - type: Clothing
+      slots:
+        - idcard
+    - type: Storage
+      grid:
+        - 0, 0, 4, 1
+      maxItemSize: Small
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Wallet
+    - type: IdCard
+    - type: Access
