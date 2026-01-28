@@ -1,0 +1,36 @@
+- type: entity
+  name: power fist
+  parent: [BaseItem, BaseSyndicateContraband]
+  id: PowerFist
+  description: A pneumatic melee gauntlet powered by any gas tank. Modes adjustable.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Melee/power_fist.rsi
+    state: icon
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,2,1
+  - type: MeleeWeapon
+    canWideSwing: false
+    damage:
+      types: {}
+    soundHit:
+      collection: Punch
+  - type: ItemSlots
+    slots:
+      gas_tank:
+        name: powerf-item-component-itemslot-name
+        whitelist:
+          components:
+          - GasTank
+        insertSound:
+          path: /Audio/Weapons/click.ogg
+          params:
+            volume: -3
+  - type: ContainerContainer
+    containers:
+      gas_tank: !type:ContainerSlot
+  - type: PowerFist
+    defaultMode: Low
+
