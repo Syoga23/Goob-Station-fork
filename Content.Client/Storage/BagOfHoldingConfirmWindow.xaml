@@ -1,0 +1,11 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'bag-of-holding-confirm-title'}">
+    <BoxContainer Orientation="Vertical" Margin="10">
+        <Label Text="{Loc 'bag-of-holding-confirm-message'}" Margin="5" Align="Center"/>
+        <BoxContainer Orientation="Horizontal" Margin="5" Align="Center">
+            <Button Name="YesButton" Text="{Loc 'bag-of-holding-singularity-yes'}" Margin="0 0 5 0"/>
+            <Button Name="NoButton" Text="{Loc 'bag-of-holding-singularity-no'}"/>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>

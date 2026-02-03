@@ -406,6 +406,11 @@
   - type: StaticPrice #Goobstation - Recycle update
     price: 1850
   - type: HideContrabandContent #Goobstation Contraband detector - Tecnicly the content is in another dimention
+  - type: BagOfHolding
+  - type: UserInterface
+    interfaces:
+      enum.BagOfHoldingUiKey.Key:
+        type: BagOfHoldingBoundUserInterface
 
 - type: entity
   parent: ClothingBackpackClown
